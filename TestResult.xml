@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="16" result="Passed" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="16" engine-version="3.11.1.0" clr-version="4.0.30319.42000" start-time="2021-01-19 09:45:53Z" end-time="2021-01-19 09:47:47Z" duration="114.058714">
+  <command-line><![CDATA[nunit3-console.exe  "C:\Users\SiradS\Desktop\Udemy\Selenium\ToolsQA POM\bin\Debug\ToolsQA POM.exe"]]></command-line>
+  <test-suite type="Assembly" id="0-1026" name="ToolsQA POM.exe" fullname="C:\Users\SiradS\Desktop\Udemy\Selenium\ToolsQA POM\bin\Debug\ToolsQA POM.exe" runstate="Runnable" testcasecount="16" result="Passed" start-time="2021-01-19 09:45:54Z" end-time="2021-01-19 09:47:47Z" duration="113.534568" total="16" passed="16" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="16">
+    <environment framework-version="3.12.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.19042.0" platform="Win32NT" cwd="C:\ReportTools" machine-name="DESKTOP-PU75A8N" user="SiradS" user-domain="SYVE" culture="en-US" uiculture="en-US" os-architecture="x86" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\ReportTools" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.7.2" />
+      <setting name="ImageRequiresX86" value="True" />
+      <setting name="RunAsX86" value="True" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="RuntimeFramework" value="net-4.0" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="2020" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <test-suite type="TestSuite" id="0-1027" name="ToolsQA_POM" fullname="ToolsQA_POM" runstate="Runnable" testcasecount="16" result="Passed" start-time="2021-01-19 09:45:54Z" end-time="2021-01-19 09:47:47Z" duration="113.521234" total="16" passed="16" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="16">
+      <test-suite type="TestSuite" id="0-1028" name="Scenarios" fullname="ToolsQA_POM.Scenarios" runstate="Runnable" testcasecount="15" result="Passed" start-time="2021-01-19 09:45:54Z" end-time="2021-01-19 09:47:30Z" duration="96.253180" total="15" passed="15" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="15">
+        <test-suite type="TestFixture" id="0-1002" name="CheckBoxButtonScenario" fullname="ToolsQA_POM.Scenarios.CheckBoxButtonScenario" classname="ToolsQA_POM.Scenarios.CheckBoxButtonScenario" runstate="Runnable" testcasecount="1" result="Passed" start-time="2021-01-19 09:45:54Z" end-time="2021-01-19 09:46:10Z" duration="16.441961" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <test-case id="0-1003" name="CheckBoxCase" fullname="ToolsQA_POM.Scenarios.CheckBoxButtonScenario.CheckBoxCase" methodname="CheckBoxCase" classname="ToolsQA_POM.Scenarios.CheckBoxButtonScenario" runstate="Runnable" seed="418223181" result="Passed" start-time="2021-01-19 09:46:01Z" end-time="2021-01-19 09:46:10Z" duration="9.144931" asserts="0">
+            <output><![CDATA[The checkbox is NOT checked!
+The checkbox is checked!
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1004" name="DropDownMenuScenario" fullname="ToolsQA_POM.Scenarios.DropDownMenuScenario" classname="ToolsQA_POM.Scenarios.DropDownMenuScenario" runstate="Runnable" testcasecount="1" result="Passed" start-time="2021-01-19 09:46:10Z" end-time="2021-01-19 09:46:17Z" duration="6.872559" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+          <test-case id="0-1005" name="DropDownMenuList" fullname="ToolsQA_POM.Scenarios.DropDownMenuScenario.DropDownMenuList" methodname="DropDownMenuList" classname="ToolsQA_POM.Scenarios.DropDownMenuScenario" runstate="Runnable" seed="1701990503" result="Passed" start-time="2021-01-19 09:46:16Z" end-time="2021-01-19 09:46:17Z" duration="0.457712" asserts="1" />
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1006" name="EmptyFields" fullname="ToolsQA_POM.Scenarios.EmptyFields" classname="ToolsQA_POM.Scenarios.EmptyFields" runstate="Runnable" testcasecount="1" result="Passed" start-time="2021-01-19 09:46:17Z" end-time="2021-01-19 09:46:24Z" duration="7.173154" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+          <test-case id="0-1007" name="LeaveFieldsEmpty" fullname="ToolsQA_POM.Scenarios.EmptyFields.LeaveFieldsEmpty" methodname="LeaveFieldsEmpty" classname="ToolsQA_POM.Scenarios.EmptyFields" runstate="Runnable" seed="1753361781" result="Passed" start-time="2021-01-19 09:46:23Z" end-time="2021-01-19 09:46:24Z" duration="0.544978" asserts="2">
+            <output><![CDATA[Test mr-sm-2 is-invalid form-control
+Test mr-sm-2 is-invalid form-control
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1008" name="InvalidPassword" fullname="ToolsQA_POM.Scenarios.InvalidPassword" classname="ToolsQA_POM.Scenarios.InvalidPassword" runstate="Runnable" testcasecount="2" result="Passed" start-time="2021-01-19 09:46:24Z" end-time="2021-01-19 09:46:33Z" duration="8.591425" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+          <test-case id="0-1009" name="LessThan5Chars" fullname="ToolsQA_POM.Scenarios.InvalidPassword.LessThan5Chars" methodname="LessThan5Chars" classname="ToolsQA_POM.Scenarios.InvalidPassword" runstate="Runnable" seed="1975288489" result="Passed" start-time="2021-01-19 09:46:30Z" end-time="2021-01-19 09:46:31Z" duration="0.992007" asserts="1" />
+          <test-case id="0-1010" name="OnlyLetters" fullname="ToolsQA_POM.Scenarios.InvalidPassword.OnlyLetters" methodname="OnlyLetters" classname="ToolsQA_POM.Scenarios.InvalidPassword" runstate="Runnable" seed="567934900" result="Passed" start-time="2021-01-19 09:46:31Z" end-time="2021-01-19 09:46:32Z" duration="1.026159" asserts="1" />
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1011" name="InvalidUserName" fullname="ToolsQA_POM.Scenarios.InvalidUserName" classname="ToolsQA_POM.Scenarios.InvalidUserName" runstate="Runnable" testcasecount="2" result="Passed" start-time="2021-01-19 09:46:33Z" end-time="2021-01-19 09:46:42Z" duration="8.660382" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+          <test-case id="0-1013" name="NoSpecialSymbol" fullname="ToolsQA_POM.Scenarios.InvalidUserName.NoSpecialSymbol" methodname="NoSpecialSymbol" classname="ToolsQA_POM.Scenarios.InvalidUserName" runstate="Runnable" seed="486222749" result="Passed" start-time="2021-01-19 09:46:39Z" end-time="2021-01-19 09:46:40Z" duration="1.010860" asserts="1" />
+          <test-case id="0-1012" name="OnlySpecialSymbols" fullname="ToolsQA_POM.Scenarios.InvalidUserName.OnlySpecialSymbols" methodname="OnlySpecialSymbols" classname="ToolsQA_POM.Scenarios.InvalidUserName" runstate="Runnable" seed="275432420" result="Passed" start-time="2021-01-19 09:46:40Z" end-time="2021-01-19 09:46:41Z" duration="1.040597" asserts="1" />
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1014" name="InvalidUserNameAndInvalidPassword" fullname="ToolsQA_POM.Scenarios.InvalidUserNameAndInvalidPassword" classname="ToolsQA_POM.Scenarios.InvalidUserNameAndInvalidPassword" runstate="Runnable" testcasecount="2" result="Passed" start-time="2021-01-19 09:46:42Z" end-time="2021-01-19 09:46:50Z" duration="8.421937" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+          <test-case id="0-1015" name="LessThan5Chars" fullname="ToolsQA_POM.Scenarios.InvalidUserNameAndInvalidPassword.LessThan5Chars" methodname="LessThan5Chars" classname="ToolsQA_POM.Scenarios.InvalidUserNameAndInvalidPassword" runstate="Runnable" seed="147064644" result="Passed" start-time="2021-01-19 09:46:48Z" end-time="2021-01-19 09:46:49Z" duration="1.011956" asserts="1" />
+          <test-case id="0-1016" name="OnlyNummbers" fullname="ToolsQA_POM.Scenarios.InvalidUserNameAndInvalidPassword.OnlyNummbers" methodname="OnlyNummbers" classname="ToolsQA_POM.Scenarios.InvalidUserNameAndInvalidPassword" runstate="Runnable" seed="501788253" result="Passed" start-time="2021-01-19 09:46:49Z" end-time="2021-01-19 09:46:50Z" duration="1.013812" asserts="1" />
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1017" name="RadioButtonScenario" fullname="ToolsQA_POM.Scenarios.RadioButtonScenario" classname="ToolsQA_POM.Scenarios.RadioButtonScenario" runstate="Runnable" testcasecount="3" result="Passed" start-time="2021-01-19 09:46:50Z" end-time="2021-01-19 09:47:12Z" duration="22.260641" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+          <test-case id="0-1018" name="RadioButtonCase" fullname="ToolsQA_POM.Scenarios.RadioButtonScenario.RadioButtonCase" methodname="RadioButtonCase" classname="ToolsQA_POM.Scenarios.RadioButtonScenario" runstate="Runnable" seed="55654455" result="Passed" start-time="2021-01-19 09:46:56Z" end-time="2021-01-19 09:46:57Z" duration="0.193978" asserts="2" />
+          <test-case id="0-1020" name="RadioButtonStatus" fullname="ToolsQA_POM.Scenarios.RadioButtonScenario.RadioButtonStatus" methodname="RadioButtonStatus" classname="ToolsQA_POM.Scenarios.RadioButtonScenario" runstate="Runnable" seed="156549663" result="Passed" start-time="2021-01-19 09:46:57Z" end-time="2021-01-19 09:47:02Z" duration="5.091723" asserts="0">
+            <output><![CDATA[The 1 radio button is not checked
+This Radio Button is checked
+]]></output>
+          </test-case>
+          <test-case id="0-1019" name="VerifyAllButtons" fullname="ToolsQA_POM.Scenarios.RadioButtonScenario.VerifyAllButtons" methodname="VerifyAllButtons" classname="ToolsQA_POM.Scenarios.RadioButtonScenario" runstate="Runnable" seed="482917113" result="Passed" start-time="2021-01-19 09:47:02Z" end-time="2021-01-19 09:47:12Z" duration="10.126184" asserts="0">
+            <output><![CDATA[This is one of the unchecked radio Buttons
+This is one of the unchecked radio Buttons
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1021" name="SearchInputFieldScenario" fullname="ToolsQA_POM.Scenarios.SearchInputFieldScenario" classname="ToolsQA_POM.Scenarios.SearchInputFieldScenario" runstate="Runnable" testcasecount="2" result="Passed" start-time="2021-01-19 09:47:12Z" end-time="2021-01-19 09:47:20Z" duration="7.451582" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+          <test-case id="0-1023" name="SerachFieldFourCharacters" fullname="ToolsQA_POM.Scenarios.SearchInputFieldScenario.SerachFieldFourCharacters" methodname="SerachFieldFourCharacters" classname="ToolsQA_POM.Scenarios.SearchInputFieldScenario" runstate="Runnable" seed="1991102848" result="Passed" start-time="2021-01-19 09:47:18Z" end-time="2021-01-19 09:47:19Z" duration="0.200195" asserts="1">
+            <output><![CDATA[Title Learning JavaScript Design Patterns
+]]></output>
+          </test-case>
+          <test-case id="0-1022" name="SerachFieldLessThanThreeCharacters" fullname="ToolsQA_POM.Scenarios.SearchInputFieldScenario.SerachFieldLessThanThreeCharacters" methodname="SerachFieldLessThanThreeCharacters" classname="ToolsQA_POM.Scenarios.SearchInputFieldScenario" runstate="Runnable" seed="508115933" result="Passed" start-time="2021-01-19 09:47:19Z" end-time="2021-01-19 09:47:19Z" duration="0.171173" asserts="2">
+            <output><![CDATA[Title Learning JavaScript Design Patterns
+Title Addy Osmani
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1024" name="TextBoxScenario" fullname="ToolsQA_POM.Scenarios.TextBoxScenario" classname="ToolsQA_POM.Scenarios.TextBoxScenario" runstate="Runnable" testcasecount="1" result="Passed" start-time="2021-01-19 09:47:20Z" end-time="2021-01-19 09:47:30Z" duration="10.375482" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+          <test-case id="0-1025" name="TextBoxFillForm" fullname="ToolsQA_POM.Scenarios.TextBoxScenario.TextBoxFillForm" methodname="TextBoxFillForm" classname="ToolsQA_POM.Scenarios.TextBoxScenario" runstate="Runnable" seed="208096903" result="Passed" start-time="2021-01-19 09:47:26Z" end-time="2021-01-19 09:47:30Z" duration="3.510155" asserts="1" />
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestFixture" id="0-1000" name="ValidLogin" fullname="ToolsQA_POM.ValidLogin" classname="ToolsQA_POM.ValidLogin" runstate="Runnable" testcasecount="1" result="Passed" start-time="2021-01-19 09:47:30Z" end-time="2021-01-19 09:47:47Z" duration="17.267720" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+        <test-case id="0-1001" name="PositiveTestCase" fullname="ToolsQA_POM.ValidLogin.PositiveTestCase" methodname="PositiveTestCase" classname="ToolsQA_POM.ValidLogin" runstate="Runnable" seed="762241521" result="Passed" start-time="2021-01-19 09:47:36Z" end-time="2021-01-19 09:47:47Z" duration="10.731627" asserts="1" />
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

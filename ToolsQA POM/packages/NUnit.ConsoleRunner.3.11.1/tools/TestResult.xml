@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="8" result="Passed" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="8" engine-version="3.11.1.0" clr-version="4.0.30319.42000" start-time="2020-12-26 23:08:51Z" end-time="2020-12-26 23:09:54Z" duration="62.468836">
+  <command-line><![CDATA[nunit3-console.exe  "C:\Users\SiradS\Desktop\Udemy\Selenium\ToolsQA POM\bin\Debug\ToolsQA POM.exe"]]></command-line>
+  <test-suite type="Assembly" id="0-1013" name="ToolsQA POM.exe" fullname="C:\Users\SiradS\Desktop\Udemy\Selenium\ToolsQA POM\bin\Debug\ToolsQA POM.exe" runstate="Runnable" testcasecount="8" result="Passed" start-time="2020-12-26 23:08:52Z" end-time="2020-12-26 23:09:53Z" duration="61.255540" total="8" passed="8" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="8">
+    <environment framework-version="3.12.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.19042.0" platform="Win32NT" cwd="C:\Users\SiradS\Desktop\Udemy\Selenium\ToolsQA POM\packages\NUnit.ConsoleRunner.3.11.1\tools" machine-name="DESKTOP-PU75A8N" user="SiradS" user-domain="SYVE" culture="en-DE" uiculture="en-US" os-architecture="x86" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\SiradS\Desktop\Udemy\Selenium\ToolsQA POM\packages\NUnit.ConsoleRunner.3.11.1\tools" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.7.2" />
+      <setting name="ImageRequiresX86" value="True" />
+      <setting name="RunAsX86" value="True" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="RuntimeFramework" value="net-4.0" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="22992" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <test-suite type="TestSuite" id="0-1014" name="ToolsQA_POM" fullname="ToolsQA_POM" runstate="Runnable" testcasecount="8" result="Passed" start-time="2020-12-26 23:08:52Z" end-time="2020-12-26 23:09:53Z" duration="61.215002" total="8" passed="8" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="8">
+      <test-suite type="TestSuite" id="0-1015" name="Scenarios" fullname="ToolsQA_POM.Scenarios" runstate="Runnable" testcasecount="7" result="Passed" start-time="2020-12-26 23:08:52Z" end-time="2020-12-26 23:09:35Z" duration="42.391118" total="7" passed="7" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="7">
+        <test-suite type="TestFixture" id="0-1002" name="EmptyFields" fullname="ToolsQA_POM.Scenarios.EmptyFields" classname="ToolsQA_POM.Scenarios.EmptyFields" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-12-26 23:08:52Z" end-time="2020-12-26 23:09:02Z" duration="9.690100" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+          <test-case id="0-1003" name="LeaveFieldsEmpty" fullname="ToolsQA_POM.Scenarios.EmptyFields.LeaveFieldsEmpty" methodname="LeaveFieldsEmpty" classname="ToolsQA_POM.Scenarios.EmptyFields" runstate="Runnable" seed="297809626" result="Passed" start-time="2020-12-26 23:09:01Z" end-time="2020-12-26 23:09:01Z" duration="0.770698" asserts="1">
+            <output><![CDATA[Test mr-sm-2 is-invalid form-control
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1004" name="InvalidPassword" fullname="ToolsQA_POM.Scenarios.InvalidPassword" classname="ToolsQA_POM.Scenarios.InvalidPassword" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-26 23:09:02Z" end-time="2020-12-26 23:09:13Z" duration="10.827670" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+          <test-case id="0-1005" name="LessThan5Chars" fullname="ToolsQA_POM.Scenarios.InvalidPassword.LessThan5Chars" methodname="LessThan5Chars" classname="ToolsQA_POM.Scenarios.InvalidPassword" runstate="Runnable" seed="360013242" result="Passed" start-time="2020-12-26 23:09:09Z" end-time="2020-12-26 23:09:10Z" duration="1.359590" asserts="1" />
+          <test-case id="0-1006" name="OnlyLetters" fullname="ToolsQA_POM.Scenarios.InvalidPassword.OnlyLetters" methodname="OnlyLetters" classname="ToolsQA_POM.Scenarios.InvalidPassword" runstate="Runnable" seed="299926498" result="Passed" start-time="2020-12-26 23:09:10Z" end-time="2020-12-26 23:09:12Z" duration="1.708483" asserts="1" />
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1007" name="InvalidUserName" fullname="ToolsQA_POM.Scenarios.InvalidUserName" classname="ToolsQA_POM.Scenarios.InvalidUserName" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-26 23:09:13Z" end-time="2020-12-26 23:09:23Z" duration="10.069031" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+          <test-case id="0-1009" name="NoSpecialSymbol" fullname="ToolsQA_POM.Scenarios.InvalidUserName.NoSpecialSymbol" methodname="NoSpecialSymbol" classname="ToolsQA_POM.Scenarios.InvalidUserName" runstate="Runnable" seed="888105469" result="Passed" start-time="2020-12-26 23:09:20Z" end-time="2020-12-26 23:09:21Z" duration="1.274152" asserts="1" />
+          <test-case id="0-1008" name="OnlySpecialSymbols" fullname="ToolsQA_POM.Scenarios.InvalidUserName.OnlySpecialSymbols" methodname="OnlySpecialSymbols" classname="ToolsQA_POM.Scenarios.InvalidUserName" runstate="Runnable" seed="1257083051" result="Passed" start-time="2020-12-26 23:09:21Z" end-time="2020-12-26 23:09:22Z" duration="1.469417" asserts="1" />
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1010" name="InvalidUserNameAndInvalidPassword" fullname="ToolsQA_POM.Scenarios.InvalidUserNameAndInvalidPassword" classname="ToolsQA_POM.Scenarios.InvalidUserNameAndInvalidPassword" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-26 23:09:23Z" end-time="2020-12-26 23:09:35Z" duration="11.796171" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+          <test-case id="0-1011" name="LessThan5Chars" fullname="ToolsQA_POM.Scenarios.InvalidUserNameAndInvalidPassword.LessThan5Chars" methodname="LessThan5Chars" classname="ToolsQA_POM.Scenarios.InvalidUserNameAndInvalidPassword" runstate="Runnable" seed="664921697" result="Passed" start-time="2020-12-26 23:09:29Z" end-time="2020-12-26 23:09:31Z" duration="1.442742" asserts="1" />
+          <test-case id="0-1012" name="OnlyNummbers" fullname="ToolsQA_POM.Scenarios.InvalidUserNameAndInvalidPassword.OnlyNummbers" methodname="OnlyNummbers" classname="ToolsQA_POM.Scenarios.InvalidUserNameAndInvalidPassword" runstate="Runnable" seed="604289583" result="Passed" start-time="2020-12-26 23:09:31Z" end-time="2020-12-26 23:09:32Z" duration="1.315916" asserts="1" />
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestFixture" id="0-1000" name="ValidLogin" fullname="ToolsQA_POM.ValidLogin" classname="ToolsQA_POM.ValidLogin" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-12-26 23:09:35Z" end-time="2020-12-26 23:09:53Z" duration="18.822704" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+        <test-case id="0-1001" name="PositiveTestCase" fullname="ToolsQA_POM.ValidLogin.PositiveTestCase" methodname="PositiveTestCase" classname="ToolsQA_POM.ValidLogin" runstate="Runnable" seed="1828433185" result="Passed" start-time="2020-12-26 23:09:42Z" end-time="2020-12-26 23:09:53Z" duration="11.034093" asserts="1" />
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
