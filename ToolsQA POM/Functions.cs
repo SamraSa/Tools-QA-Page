@@ -4,7 +4,7 @@ using OpenQA.Selenium.Interactions;
 using System;
 using OpenQA.Selenium;
 using System.Threading;
-
+using System.Diagnostics;
 
 namespace ToolsQA_POM
 {
@@ -17,9 +17,25 @@ namespace ToolsQA_POM
             Driver.driver.Navigate().GoToUrl(Config.BaseURL);
             Driver.driver.Manage().Window.Maximize();
             Driver.WaitForElementUpTo(Config.ElementsWaitingTimeout);
+        }
 
+        //Report Screenshot
+
+        public static void passTakeScreenshot(string screenshotName)
+        {
+            string ScreenshotTime = DateTime.Now.ToString("dd-MM-yyyy HH:mm").Replace(" / ", "_").Replace(":", "_").Replace(" ", "_");
+
+
+            Trace.WriteLine("Time_: " + ScreenshotTime);
+
+
+            ITakesScreenshot screenshotDriver = Driver.driver as ITakesScreenshot;
+            Screenshot screenshot = screenshotDriver.GetScreenshot();
+            screenshot.SaveAsFile(@"C:\Users\SiradS\Desktop\ToolsQA_POM\ToolsQA POM\Reports\Screenshots\" + screenshotName + " " + ScreenshotTime + ".jpeg");
 
         }
+
+
 
         // Defining all the user actions (Methods) that can be performed in the all Pages
 
@@ -80,10 +96,19 @@ namespace ToolsQA_POM
             return errorMessage;
         }
 
+        public static void ScrollToTitle()
+        {
+            LoginPage loginPage = new LoginPage();
+            Actions action = new Actions(Driver.driver);
 
-        //Login scenarios - Empty Fields
 
-        public static void EmptyLoginForm()
+            ((IJavaScriptExecutor)Driver.driver).ExecuteScript("arguments[0].scrollIntoView(true);", loginPage.Title);
+
+        }
+
+            //Login scenarios - Empty Fields
+
+            public static void EmptyLoginForm()
         {
             LoginPage loginPage = new LoginPage();
             HomePage homePage = new HomePage();
@@ -154,11 +179,20 @@ namespace ToolsQA_POM
         }
 
 
-        public static void ChangeAuthorNameOrder()
+        public static void ChangeAuthorNameOrderFirstClick()
         {
             HomePage homePage = new HomePage();
 
-            homePage.FirstRowAuthorCursorPointer.Click();
+            homePage.RowAuthorCursorPointer.Click();
+            
+        }
+
+        public static void ChangeAuthorNameOrderSecondClick()
+        {
+            HomePage homePage = new HomePage();
+
+            homePage.RowAuthorCursorPointer.Click();
+
         }
 
 
@@ -178,6 +212,31 @@ namespace ToolsQA_POM
         }
 
 
+        public static void SelectFirstDropDownElement()
+        {
+            HomePage homePage = new HomePage();
+            Actions action = new Actions(Driver.driver);
+
+
+            action.MoveToElement(homePage.DropDownMenu);
+            action.Build().Perform();
+
+            homePage.FirstDropDownElement.Click();
+
+        }
+
+
+        public static void ScrollToDropDownElement()
+        {
+            HomePage homePage = new HomePage();
+            Actions action = new Actions(Driver.driver);
+
+            ((IJavaScriptExecutor)Driver.driver).ExecuteScript("arguments[0].scrollIntoView(true);", homePage.DropDownMenu);
+
+        }
+
+        //Table
+
         public static int RowTableCount()
         {
             HomePage homePage = new HomePage();
@@ -185,6 +244,32 @@ namespace ToolsQA_POM
             int NumberOfTableRows = homePage.Table.FindElements(By.ClassName("rt-tr")).Count;
             return NumberOfTableRows;
         }
+
+        public static void ClickingOnThePenultimatTableResult()
+        {
+            HomePage homePage = new HomePage();
+            Actions action = new Actions(Driver.driver);
+
+
+            action.MoveToElement(homePage.DropDownMenu);
+            action.Build().Perform();
+
+            homePage.TablePenultimateResult.Click();
+            
+        }
+
+
+        public static string ISBNOfBook()
+        {
+            HomePage homePage = new HomePage();
+
+            var BookISBN = homePage.ISBNOfSelectedBook.Text;
+            return BookISBN;
+
+        }
+
+
+
 
         //Check Box
 

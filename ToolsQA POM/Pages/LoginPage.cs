@@ -17,17 +17,22 @@ namespace ToolsQA_POM.Pages
         [FindsBy(How = How.Id, Using = "userName")]
         public IWebElement UsernameField { get; set; }
 
-       
+
         [FindsBy(How = How.Id, Using = "password")]
         public IWebElement PasswordField { get; set; }
 
-      
+
         [FindsBy(How = How.Id, Using = "login")]
         public IWebElement LoginButton { get; set; }
 
-      
+
         [FindsBy(How = How.Id, Using = "name")]
         public IWebElement ErrorMessage { get; set; }
 
+        
+        [FindsBy(How = How.XPath, Using = "//div[text()='Login']")]
+        public IWebElement Title { get; set; }
+
+        
     }
 }

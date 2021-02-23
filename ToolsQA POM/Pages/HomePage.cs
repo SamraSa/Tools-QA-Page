@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
-
+using System;
 
 namespace ToolsQA_POM.Pages
 {
@@ -30,8 +30,8 @@ namespace ToolsQA_POM.Pages
 
         //Search InputField - Filter
 
-        [FindsBy(How = How.CssSelector, Using = "#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.books-wrapper > div.ReactTable.-striped.-highlight > div.rt-table > div.rt-tbody > div:nth-child(1) > div > div:nth-child(3)")]
-        public IWebElement FirstRowAuthorCursorPointer { get; set; }
+        [FindsBy(How = How.XPath, Using = "//div[text()='Author']")]
+        public IWebElement RowAuthorCursorPointer { get; set; }
 
        
         [FindsBy(How = How.CssSelector, Using = "div.rt-table > div.rt-tbody > div:nth-child(1) > div > div:nth-child(3)")]
@@ -72,20 +72,18 @@ namespace ToolsQA_POM.Pages
         public IWebElement DropDownMenu { get; set; }
         */
 
+        //Table
 
-        [FindsBy(How = How.ClassName, Using = "rt-table")]
+        [FindsBy(How = How.ClassName, Using = "rt-tbody")]
         public IWebElement Table { get; set; }
 
 
+        [FindsBy(How = How.XPath, Using = "(//div[@class = 'rt-tbody']//a)[last()-1]")]
+        public IWebElement TablePenultimateResult { get; set; }
 
 
-
-
-
-
-
-
-
+        [FindsBy(How = How.XPath, Using = "(//div[contains(@class, 'col-md-9 ' )])//label[contains (text(),'9781449365035')]")]
+        public IWebElement ISBNOfSelectedBook { get; set; }
 
     }
 }

@@ -75,18 +75,28 @@
         //Search Input Field - Filter
         public static class AuthorName
         {
-            public static string FirstRowAuthorName = "Addy Osmani";
+            public static string FirstRowAuthorName = "Marijn Haverbeke";
         }
 
 
-        //Drop Down Manu
+        //Drop Down Menu
 
         public static class TableRows
         {
             public static int TabeleRowsOfFirstElement = 5;
-            public static int TabeleRowsOfSecondElement = 11;
-            public static int TabeleRowsOfThirdElement = 21;
+            public static int TabeleRowsOfSecondElement = 10;
+            public static int TabeleRowsOfThirdElement = 20;
         }
+
+
+        //Table Content
+        public static class TableBookISBN
+        {
+            public static string penultimateBookISBN = "9781449365035";
+        }
+
+
+
 
         //Radio Button
 
